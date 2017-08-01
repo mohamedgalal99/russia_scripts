@@ -1,4 +1,8 @@
 #!/bin/bash
+#title           :dump_nodes_buffer.sh
+#description     :This script used to dump cache/buffer from stor nodes if free memory less tan 20G
+#author		       :Mohamed Galal
+#git url         :https://github.com/mohamedgalal99/russia_scripts/blob/master/dump_nodes_buffer.sh 
 
 function log_message
 {
