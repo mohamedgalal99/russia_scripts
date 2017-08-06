@@ -1,0 +1,63 @@
+[controllers]
+  ctrl-01 ansible_host=10.200.2.2 ansible_ssh_pass= ansible_sudo_pass=
+  ctrl-02 ansible_host=10.200.2.3 ansible_ssh_pass=
+[nodes]
+  cpu-01 ansible_host=10.200.2.11
+  cpu-02 ansible_host=10.200.2.12
+  cpu-03 ansible_host=10.200.2.13
+  cpu-04 ansible_host=10.200.2.14
+  cpu-05 ansible_host=10.200.2.15
+  cpu-06 ansible_host=10.200.2.16
+  cpu-07 ansible_host=10.200.2.17
+  cpu-08 ansible_host=10.200.2.18
+  cpu-09 ansible_host=10.200.2.19
+  cpu-10 ansible_host=10.200.2.20
+  cpu-11 ansible_host=10.200.2.21
+  cpu-12 ansible_host=10.200.2.22
+  cpu-13 ansible_host=10.200.2.23
+  cpu-14 ansible_host=10.200.2.24
+  cpu-15 ansible_host=10.200.2.25
+  cpu-16 ansible_host=10.200.2.26
+  cpu-17 ansible_host=10.200.2.27
+  cpu-18 ansible_host=10.200.2.28
+  cpu-19 ansible_host=10.200.2.29
+  cpu-20 ansible_host=10.200.2.30
+  cpu-21 ansible_host=10.200.2.31
+  cpu-22 ansible_host=10.200.2.32
+  cpu-23 ansible_host=10.200.2.33
+  cpu-24 ansible_host=10.200.2.34
+  cpu-25 ansible_host=10.200.2.35
+  cpu-26 ansible_host=10.200.2.36
+  cpu-27 ansible_host=10.200.2.37
+  cpu-28 ansible_host=10.200.2.38
+  cpu-29 ansible_host=10.200.2.39
+  cpu-30 ansible_host=10.200.2.40
+  cpu-31 ansible_host=10.200.2.41
+  cpu-32 ansible_host=10.200.2.42
+  cpu-33 ansible_host=10.200.2.43 
+  cpu-34 ansible_host=10.200.2.44 
+  cpu-35 ansible_host=10.200.2.45 
+  cpu-36 ansible_host=10.200.2.46 
+
+[stor]
+  stor-01 ansible_host=10.200.2.61 
+  stor-02 ansible_host=10.200.2.62
+  stor-03 ansible_host=10.200.2.63
+  stor-04 ansible_host=10.200.2.64
+  stor-05 ansible_host=10.200.2.65
+  stor-06 ansible_host=10.200.2.66
+  stor-07 ansible_host=10.200.2.67
+  stor-08 ansible_host=10.200.2.68
+
+[datacenter-ru:children]
+  nodes
+  stor
+
+[datacenter-ru:vars]
+  ansible_connection=ssh
+  ansible_ssh_port=22
+  ansible_ssh_user=gig
+  ansible_ssh_pass=
+  sudo=yes
+  ansible_sudo_pass=
+
