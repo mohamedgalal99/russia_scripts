@@ -1,5 +1,8 @@
 #!/bin/bash
-
+#title           :ha_check.sh
+#description     :This script used to monitoe ovcmaster and start services on ovcmaster2 if it's umreachable
+#author		       :Mohamed Galal
+#git url         :https://github.com/mohamedgalal99/russia_scripts/blob/master/ha_check.sh
 ovcmaster1='172.17.0.8'
 function log_message
 {
